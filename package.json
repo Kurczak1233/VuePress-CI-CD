@@ -8,5 +8,9 @@
     "tailwindcss": "^3.2.4",
     "vuepress-plugin-md-enhance": "^2.0.0-beta.130",
     "vuepress-theme-bcc-common-components": "^1.4.54"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   }
 }
