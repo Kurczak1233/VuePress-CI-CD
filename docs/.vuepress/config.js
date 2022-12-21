@@ -12,7 +12,7 @@ export default defineUserConfig({
   lang: "en-US",
   title: "BCC Developer Documentation",
   description: "Package documentation",
-  base: "/bcc-code.github.io/",
+  base: "/bcc-docs-template/",
   theme: bccCustomTheme({
     logoDark: "bccLogoWhite.png",
     logo: "bccLogoDark.png",
@@ -24,13 +24,13 @@ export default defineUserConfig({
         link: "/Setup.md",
       },
     ],
-    repo: "Kurczak1233/bcc-code.github.io",
+    repo: "Kurczak1233/bcc-docs-template",
     // if your docs are in a different repo from your main project:
-    docsRepo: "Kurczak1233/bcc-code.github.io",
+    docsRepo: "Kurczak1233/bcc-docs-template",
     // if your docs are not at the root of the repo:
     docsDir: "docs",
     // if your docs are in a specific branch (defaults to 'master'):
-    docsBranch: "master",
+    docsBranch: "main",
     // defaults to false, set to true to enable
     editLinks: true,
     // custom text for edit link. Defaults to "Edit this page"
