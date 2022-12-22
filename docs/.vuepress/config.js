@@ -4,15 +4,17 @@ import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { bccCustomTheme } from "vuepress-theme-bcc-common-components/config.js";
 import { findPathIcons } from "vuepress-theme-bcc-common-components/helpers/findPathIcons.js";
 import { getSideBarItems } from "vuepress-theme-bcc-common-components/helpers/getSidebarItems.js";
+import * as data from "./userConfig.js";
+
 const __dirname = getDirname(import.meta.url);
 
 console.log(getSideBarItems(__dirname));
 
 export default defineUserConfig({
   lang: "en-US",
-  title: "BCC Developer Documentation",
-  description: "Package documentation",
-  base: "/bcc-docs-template/",
+  title: data.title,
+  description: data.description,
+  base: data.base,
   theme: bccCustomTheme({
     logoDark: "bccLogoWhite.png",
     logo: "bccLogoDark.png",
@@ -24,9 +26,9 @@ export default defineUserConfig({
         link: "/Setup.md",
       },
     ],
-    repo: "Kurczak1233/bcc-docs-template",
+    repo: data.repo,
     // if your docs are in a different repo from your main project:
-    docsRepo: "Kurczak1233/bcc-docs-template",
+    docsRepo: data.repo,
     // if your docs are not at the root of the repo:
     docsDir: "docs",
     // if your docs are in a specific branch (defaults to 'master'):
