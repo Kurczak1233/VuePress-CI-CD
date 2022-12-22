@@ -32,8 +32,8 @@ jobs:
         env:
           title: BCC Documentation CI/CD
           description: BCC Documentation description CI/CD
-          base: /VuePress-CI-CD/
-          repo: Kurczak1233/VuePress-CI-CD
+          base: /bcc-code/
+          repo: bcc-code
 
       # Build the VuePress site
       - name: Build VuePress site
@@ -46,6 +46,7 @@ jobs:
           # deploy the default output dir of VuePress
           build_dir: docs/.vuepress/dist
           target_branch: gh-pages
+          repo: Kurczak1233/VuePress-CI-CD
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
