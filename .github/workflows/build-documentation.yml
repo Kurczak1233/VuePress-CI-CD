@@ -32,8 +32,8 @@ jobs:
         env:
           title: BCC Documentation CI/CD
           description: BCC Documentation description CI/CD
-          base: /bcc-code/
-          repo: bcc-code
+          base: /VuePress-CI-CD/
+          repo: Kurczak1233/VuePress-CI-CD
 
       # Build the VuePress site
       - name: Build VuePress site
